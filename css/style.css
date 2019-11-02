@@ -1,0 +1,27 @@
+#encabezado {
+    background-color: rgb(241, 241, 241);
+    border-color : black;
+    height:10%;
+}
+
+#columna_izquierda {
+    float:left;
+    width:30%;
+}
+
+#columna_derecha{
+    background-color: rgb(211, 208, 208);
+    float: left;
+    width:70%;
+    height:80%;
+}
+
+#panel_tareas {
+    background-color: rgb(238, 250, 255);
+}
+
+#footer {
+    height: 10%;
+    float: left;
+    width: 100%;
+}
