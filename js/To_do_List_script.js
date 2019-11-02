@@ -1,1 +1,4 @@
-$(document).ready()
+$(document).ready();
+
+    $("boton+tarea").click()
+
