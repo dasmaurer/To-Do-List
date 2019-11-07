@@ -1,4 +1,4 @@
 $(document).ready();
 
-    $("boton+tarea").click()
+$("boton+tarea").click()
 
