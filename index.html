@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="js/To_do_List_script.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/To_do_List_script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
@@ -32,7 +32,7 @@
 
       <!--este es el contenido del modal-->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title" id="exampleModalLabel">¿Que tarea deseas agregar?</h4>
@@ -44,12 +44,15 @@
               <form> 
                 <input id="nombreTarea" type="text" name="tarea" placeholder="Escribe tu tarea">
                 <br>
-                <select id="tipoTarea">
-                    <option value="personal">Personal</option>
-                    <option value="laboral">Laboral</option>
-                    <option value="familiar">Familiar</option>
-                    <option value="compras">Compras</option>
-                  </select>
+                <div id="tipoTarea" multiple>
+                    <input type="radio" name="radio-group" value="personal">Personal 
+                    <br>
+                    <input type="radio" name="radio-group" value="laboral"> Laboral
+                    <br>
+                    <input type="radio" name="radio-group" value="familiar" > Familiar
+                    <br>
+                    <input type="radio" name="radio-group" value="compras" > Compras
+                </div>
                 <br>
               </form>
             </div>
@@ -60,6 +63,9 @@
           </div>
         </div>
       </div>
+
+
+
     <div id=footer>footer</div>
 
 
