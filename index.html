@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>¿Qué hago hoy?</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="js/To_do_List_script.js"></script>
+    <title>TO DO LIST</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
     <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="js/To_do_List_script.js"></script>
   </head>
 
   <body>
-    <div id=encabezado>To-do List</div> 
-      <div id=columna_izquierda>
-        <div id=boton+tarea> <button>+</button></div>
-      </div>
-      <div id=columna_derecha>Tus tareas pendientes:
-        <div id=panel_tareas>
-          <ul>
-            <li>test tarea 1</li>
-            <li>test tarea 2</li>
-          </ul>
-        </div>
-      </div>
-      <div class=tareaNueva>
-        <form> 
-          <input id="numbreTarea" type="text" name="tarea" value="¿Que tareas deseas agregar?">
-          <br>
-          <input id="agruegarTarea" type="submit" value="agragar tarea">
-        </form>
-      </div>
-    <div id=footer>footer</div>
+    <div id="encabezado"><h1>To-do List</h1></div>
+    <div id="columna_izquierda">
+      <div id="boton+tarea"><button>+</button></div>
+    </div>
+    <div id="columna_derecha">
+      <h2>Tareas pendientes:</h2>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Titulo</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Fecha Deadline</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="tareaNueva">
+      <form>
+        <input
+          id="titulo"
+          type="text"
+          name="titulo"
+          placeholder="¿Que tarea deseas agregar?"
+        />
+        <br />
+        <input
+          id="descripcion"
+          type="text"
+          name="descripcion"
+          placeholder="Agrega una descripcion"
+        />
+        <br />
+        <input
+          id="fechaDeadline"
+          type="date"
+          name="fechaDeadline"
+          placeholder="Agrega una fecha Deadline"
+        />
+        <br />
+        <input id="agregarTarea" type="button" value="agragar tarea" />
+      </form>
+    </div>
+    <div id="footer">footer</div>
   </body>
-
 </html>
